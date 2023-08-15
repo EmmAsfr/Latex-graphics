@@ -1,0 +1,23 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[xmin=0,
+xmax=5, 
+ymin=-15, 
+ymax=15, 
+axis x line=middle, 
+axis y line=middle, 
+samples=500, 
+xlabel = $x$, 
+ylabel=$f(x)$, 
+width=10cm]
+\addplot[domain=0:5, color=red]{1/(x*ln(x))};
+\end{axis}
+\end{tikzpicture}\\
+\begin{center}
+    $\displaystyle f(x)=\frac{1}{x \ln(x)}$
+\end{center}
+\end{document}
